@@ -1,37 +1,55 @@
-# CSS NAV BAR
+# LaundryMart Web Application
 
-## Objective
-This is a responsive "Hero Section" built for a laundry service. 
+A responsive laundry-service landing page built using **HTML and CSS**.
+
+## Project Structure
+
+```text
+Task5/
+├── index.html
+├── style.css
+└── README.md
+```
 
 ## Features
-- Display a landscape image.
-- Add a "Click Me" button below the image.
-- Apply a linear gradient background to the button.
-- Maintain 25% spacing from the left and right sides of the screen.
-- Maintain 10% spacing from the top and bottom of the screen.
-- Use viewport units (`vw` and `vh`) for responsive sizing.
-- Apply `box-sizing: border-box` for proper element sizing.
 
-## Technologies Used
-- HTML5
-- CSS FLEXBOX
+- Navigation bar with:
+  - LaundryMart logo
+  - Home
+  - Services
+  - About Us
+  - Contact Us
+  - User name on the right
+- Laundry-service hero/video-style section with:
+  - Left content area
+  - Service description
+  - "Book Service Today" button
+  - Right-side laundry image
+- Viewport-based sizing using `vh`, `vw`, and `clamp()`.
+- Designed so the desktop hero section fits within the viewport without page scrolling.
+- Responsive layout for smaller screens.
+- CSS is correctly linked to the HTML using:
+  `<link rel="stylesheet" href="style.css">`
 
-## Folder Structure
+## Important Requirement
 
-```
-Project Folder
-│── index.html
-│── styles.css
-|── logo.png
-│── README.md
-```
+Flexbox is **not used** in this implementation.
+
+The navigation and two-column hero layout are created using:
+
+- `display: inline-block`
+- `display: block`
+- `vertical-align`
+- `width`
+- `height`
+- `position`
+- `vh` / `vw`
+- `clamp()`
 
 ## How to Run
-1. Open `index.html` in any web browser.
 
-## CSS Concepts Used
-- Flexbox
+1. Open `index.html` in a browser.
 
-## Output
-The webpage displays:
-- A responsive NAV bar
+## Image
+
+The hero image is loaded from Unsplash using a remote image URL. No additional image file is required.
