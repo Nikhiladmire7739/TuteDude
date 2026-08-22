@@ -1,77 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laundry Hero Section</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaundryMart | Fresh Clothes, Happy You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <nav>
-      <div class="logo-section">Logo</div>
-
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-
-      <div class="user-section">
-        <div class="user-wrapper">Username</div>
-      </div>
-
-      <!-- hamburger button -->
-      <button class="hamburger-container">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
-
-      <!-- sidebar -->
-      <div class="sidebar">
-        <ul class="sidebar-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="hero-section">
-      <div class="left-view">
-        <div class="left-view-content">
-          <h1>
-            Revitalize Your <br />
-            Clothes with Expert
-          </h1>
-          <h2>Laundry Services!</h2>
-
-          <p>
-            Laundry service provides professional washing, drying and ironing of
-            clothes to keep them clean and fresh. It saves time and effort by
-            taking care of your daily clothing care needs efficiently.
-          </p>
-
-          <button>Book a service today!</button>
+    <header class="navbar">
+        <div class="logo-area">
+            <span class="logo-icon">🧺</span>
+            <span class="logo-text">Laundry<span>Mart</span></span>
         </div>
-      </div>
 
-      <div class="right-view">
-        <div class="image-wrapper">
-          <img src="logo.png" alt="Laundry Image" class="hero-image" />
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div class="user-name">
+            <span class="user-icon">●</span>
+            Hello, Nikhil
         </div>
-      </div>
-    </div>
-  </body>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-left">
+                <div class="hero-content">
+                    <p class="eyebrow">FAST • FRESH • RELIABLE</p>
+
+                    <h1>Fresh Clothes,<br><span>Happy You!</span></h1>
+
+                    <p class="description">
+                        Experience hassle-free laundry service with quick
+                        pick-up, expert care, and fresh delivery right to
+                        your doorstep.
+                    </p>
+
+                    <a href="#services" class="book-button">
+                        <span>▣</span>
+                        Book Service Today
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <img
+                    src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=1200&q=85"
+                    alt="Clean laundry and washing machine"
+                >
+            </div>
+        </section>        
+    </main>
+
+</body>
 </html>
